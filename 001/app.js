@@ -29,3 +29,64 @@ function pirma() {
 }
 
 pirma()
+
+
+let ka;
+
+
+if(5>2) {
+    ka = 'jo';
+} else {
+    ka = 'ne jo';
+
+}
+
+console.log(ka);
+
+const kas ='A'
+
+switch(kas) {
+
+case 'A':
+console.log('A');
+
+case 'B':
+console.log('B');
+
+}
+
+
+
+
+for (let i = 0; i < 5; i++){
+  //       // veliau
+  // }
+
+  var varas = 'Labas';
+
+  console.log(varas)
+
+  //Global scrope
+
+    if(5>3) {
+
+        var varas = 'Labas';
+
+        console.log(varas);
+    }
+
+
+  }
+
+let rez = 1;
+
+ for (let i = 1; i < 6; i++){
+
+    rez = rez * i ;
+
+ }
+
+ console.log('*' ,rez);
+
+
+
