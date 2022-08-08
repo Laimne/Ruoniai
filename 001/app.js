@@ -152,33 +152,17 @@ let rez = 1;
 
  console.log('*' ,rez);
 
-//1.
-let egzaminoRezultatas = rand(1, 10);
-// Išvesti rezultatą ir sprendimą ar egzaminas išlaikytas. Mažiausias išlaikymo balas yra 4
-
-function rand(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function egzaminoRezultatas() {
-let egzaminoRezultatas = rand(1, 10);
-
-if (0 > 4 && 4 > 100 ){
-    egzaminoRezultatas =='ISLAIKYTAS'
-} else { egzaminoRezultatas== 'NEISLAIKYTAS'}
-
-    console.log(egzaminoRezultatas);
-
-}
-
-const a = 6;
-console.log(a)
-
-
-egzaminoRezultatas()
-
+ //1.
+ let egzaminoRezultatas = rand(1, 10);
+ // Išvesti rezultatą ir sprendimą ar egzaminas išlaikytas. Mažiausias išlaikymo balas yra 4
+ 
+ function rand(min, max) {
+     min = Math.ceil(min);
+     max = Math.floor(max);
+     return Math.floor(Math.random() * (max - min + 1)) + min;
+ }
+ 
+ 
 
 
 
