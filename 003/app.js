@@ -46,12 +46,17 @@ console.log("--------------------------------------");
 
 let iskrito;
 
+let saugiklis = 10;
+
 do {
+
+    if(!(saugiklis--)) break;
 
     iskrito = rand(0,1) ? 'SKAICIUS' : 'HERBAS';
     console.log(iskrito)
 
-}while(iskrito != 'HERBAS');
+}while(iskrito != 'B');
 
 
 console.log(rand(1,5));
+
