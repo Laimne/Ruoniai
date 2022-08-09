@@ -38,3 +38,4 @@ console.log(spalva)
 
     color();
 }
+console.log('-----------');
