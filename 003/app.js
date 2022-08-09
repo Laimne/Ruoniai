@@ -60,3 +60,6 @@ do {
 
 console.log(rand(1,5));
 
+console.log("-----------------------------------------");
+/* iskrinta tris skaiciai ir sustoj*/
+
