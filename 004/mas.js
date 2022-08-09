@@ -74,8 +74,12 @@ console.log(mas.length);
 
 
 
-// vienos eilutes kodas, g-gyventojas, i- aukstas , jei kconsoleje pridesime du++ generuos kiekviena gyventoja atskirai//
+// vienos eilutes kodas, g-gyventojas, i- aukstas ,
+ //jei kconsoleje pridesime du++ generuos kiekviena gyventoja atskirai//
+
 mas.forEach((g, i) => console.log(i, g));
+
+
 
 
 
