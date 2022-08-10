@@ -109,21 +109,52 @@ const filter = sp.filter(el => el.type =='car')
     console.log('-------------------------------------------');
 
 
- // sp.sort((a, b) => b.id - a.id);
+  sp.sort((a, b) => b.id - a.id);
+
+  console.log([...sp]); 
 
     // stringams didinti    "String.prototype.localeCompare()"//
 
-    sp.sort((a ,b) => a.name.localeCompare(a.name));
+    //sp.sort((a ,b) => a.name.localeCompare(b.name));
 
     console.log([...sp]);
 
     console.log('-------------------------------------------');
-  
-    //array.reducel    sudetis, daugyba ir t.t.//
+
+    sp.sort((a ,b) => b.name.localeCompare(a.name));
+
+    console.log([...sp]);
+
+    console.log('-------------------------------------------');
 
 
-    //const array1 = [1, 2, 3, 4, ];
+    //array.reducel tai yra sudetis, daugyba ir t.t.//
 
+
+    const array1 = [1, 2, 3, 4, ];
+
+    //array1.reduce((previousValue , currentValue)=>previousValue + currentValue ,
+    //kai irasome skaiciu po kalelio pvz. daugyboje -tai tiek kartu tuos skaicius sudaugina);
+
+    console.log(array1.reduce((previousValue , currentValue)=>previousValue + currentValue ));
+ 
+
+    const array2 = [1, 2, 3, 4, ];
+   
+    console.log(array2.reduce((previousValue , currentValue)=>previousValue * currentValue, 2 ));
+
+
+    console.log('-------------------------------------------');  
+
+    const array3 = [1, 2, 3, 4,10 ];
+
+    const initialValue = 0;
+    const sumWithInitial = array3.reduce(
+      (previousValue, currentValue) => previousValue + currentValue,
+      initialValue
+    );
+
+    console.log(sumWithInitial);
 
 
 
