@@ -54,10 +54,80 @@ function rand(min, max) {
 
   //console.log(filter);
 
-  const filter = sp.filter(el => el.type =='car')
+const filter = sp.filter(el => el.type =='car')
 
-  .map(el => ({...el ,name:  'ZIL'}));
+  //.map(el => ({...el ,name:  'ZIL'}));
 
   console.log(filter);
 
+  
   console.log('-------------------------------------------');
+
+  //KOKIOS SPALVOS BEBRAS -- filtras--gali buti naudojamas trinimui//
+
+  const filter1 = sp.find(el => el.type == 'car').color;
+
+
+  console.log(filter1);
+
+  console.log('-------------------------------------------');
+
+  const filter2 = sp.find(el => el.color == 'redc' && el.type =='animal');
+
+
+  console.log(filter2 ? filter2.color : 'no no no');
+
+  console.log('-------------------------------------------');
+
+  //const filter3 = sp.filter3 (el => el.name !='Tomas');
+
+
+  //console.log(filter3);
+
+
+  console.log('-------------------------------------------');
+
+  const filter4 = sp.filter(el => el.name != 'animal');
+
+  console.log([...sp]);
+
+ // sp.sort((a ,b ) => {
+//
+   // if (a. name > b.name) {
+   //   return 1;
+   // }
+    //  if (a. name < b.name) {
+    //    return 2;
+    //  }
+//
+    //  return 0;
+//
+  //  });
+
+    console.log([...sp]);
+
+    console.log('-------------------------------------------');
+
+
+ // sp.sort((a, b) => b.id - a.id);
+
+    // stringams didinti    "String.prototype.localeCompare()"//
+
+    sp.sort((a ,b) => a.name.localeCompare(a.name));
+
+    console.log([...sp]);
+
+    console.log('-------------------------------------------');
+  
+    //array.reducel    sudetis, daugyba ir t.t.//
+
+
+    //const array1 = [1, 2, 3, 4, ];
+
+
+
+
+   
+
+
+  
