@@ -50,3 +50,30 @@ console.log('*', text);
 
 
  
+class Nso {
+
+  static antena =3;
+
+   constructor() {
+
+
+   }
+ 
+
+
+}
+
+const ufo1 = new Nso();
+const ufo2 = new Nso();
+
+console.log(ufo1);
+console.log(ufo2);
+
+ 
+
+
+
+
+
+
+
