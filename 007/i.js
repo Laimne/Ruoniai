@@ -162,3 +162,21 @@ ufo2.sayBu4();
 
 
 let car = "Fiat";
+
+
+function person (name, age) {
+this.name = name;
+this.age = age;
+
+this.displayInfo = () => {
+
+  console.log(`Mano vardas ${this.name}, mano amzius ${this.age}!`);
+};
+
+}
+
+const personOne = new person("Laima", 55, true, [
+  "JavaScript"
+]);
+
+personOne.displayInfo();
