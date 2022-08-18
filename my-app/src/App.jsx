@@ -1,5 +1,5 @@
 import './App.css';
-import rand from './Functions/rand';
+
 // import Bebras from './Components/009/Bebras';
 
 function App() {
