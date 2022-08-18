@@ -1,11 +1,15 @@
 import './App.css';
+import rand from './Functions/rand';
+// import Bebras from './Components/009/Bebras';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <h1>Labas</h1>
-       <h2>Viso gero!</h2>
+        {/* <Bebras></Bebras> */}
+        <h1>Labas</h1>
+        {/* <Bebras></Bebras> */}
+        
       </header>
     </div>
   );
