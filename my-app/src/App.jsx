@@ -2,6 +2,9 @@ import './App.css';
 import Black from './Components/Black';
 import White from './Components/White';
 import rand from './Functions/rand';
+
+
+
 //import Bebras from './Components/009/Bebras';
 //import Gele from './Components/Gele';
 //rodo arba viena komponenta arba kita parefresinus  { rand(0 , 1) ? <Black/> : <White/>}
