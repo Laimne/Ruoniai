@@ -1,6 +1,6 @@
 import './App.css';
-import Black from './Components/Black';
-import White from './Components/White';
+import Black from './Components/009/Black';
+import White from './Components/009/White';
 import rand from './Functions/rand';
 
 
