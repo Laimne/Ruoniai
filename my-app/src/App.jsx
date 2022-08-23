@@ -1,22 +1,13 @@
-import './App.css';
-import Square from './Components/010/Square';
-
-
-
-
+import './App.scss';
+import Dog from './Components/011/Dog';
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      
-        <h1>Props</h1>
-
-<Square color="red"name="Pirmadienis" size={100}show={true}></Square>
-<Square color="crimson"name="Antradienis"size= {100}show={true}></Square>
-<Square color="crimson"name="Valio"size={333}show={true}></Square>
-
+        <h1>STATE</h1>
+        <Dog color="crimson"/>
       </header>
     </div>
   );
