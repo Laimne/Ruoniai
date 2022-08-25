@@ -1,30 +1,30 @@
+import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.scss';
-
+import Books from './Components/013/Books';
+import axios from 'axios';
 
 function App() {
 
-const[count,setCount]= useState(3);
+    const [books, setBooks] = useState(null);
 
-const mult5= ()=> {
-    setCount(c=>c*5);
-    //setCount(c=>c*5);
-}
+    // fetch('https://in3.dev/knygos/')
+    // .then((response) => response.json())
+    // .then((data) => setBooks(data))
+    // .catch(_ => setBooks('ERROR'));
 
-const reset3 =() => {
-    setCount(3);
-}
-
-
+    useEffect(() => {
+        axios.get('https://in3.dev/knygos/')
+        .then(res => setBooks(res.data))
+        .catch(_ => setBooks('ERROR'))
+    }, []);
+   
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Caunt{count}</h1>
-<button onClick={mult5}>M1</button>
-<button onClick={reset3}>M2</button>
-
-          </header>
+        <Books books={books} />
+      </header>
     </div>
   );
 }
